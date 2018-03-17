@@ -11,23 +11,23 @@ namespace findRange
         static void Main(string[] args)
         {
             Console.WriteLine("Введите число от 1 до 100: ");
-            int userNumber = Int32.Parse(Console.ReadLine());
+            double userNumber = Convert.ToDouble(Console.ReadLine());
 
-            if (userNumber < 15 && userNumber > -1)
+            if ((userNumber >= 0) && (userNumber <= 14))
             {
-                Console.WriteLine("Число находится в диапазоне 0-14.");
+                Console.WriteLine("Число находится в диапазоне [0-14]");
             }
-            else if (userNumber > 14 && userNumber < 36)
+            else if ((userNumber >= 15) && (userNumber <= 35))
             {
-                Console.WriteLine("Число находится в диапазоне 15-35.");
+                Console.WriteLine("Число находится в диапазоне [15-35]");
             }
-            else if (userNumber > 35 && userNumber < 51)
+            else if ((userNumber >= 36) && (userNumber <= 50)) 
             {
-                Console.WriteLine("Число находится в диапазоне 36-50.");
+                Console.WriteLine("Число находится в диапазоне [36-50]");
             }
-            else if (userNumber > 50 && userNumber < 101)
+            else if ((userNumber >= 51) && (userNumber <= 100))
             {
-                Console.WriteLine("Число находится в диапазоне 50-100.");
+                Console.WriteLine("Число находится в диапазоне [50-100]");
             }
             else
             {
